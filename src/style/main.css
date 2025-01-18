@@ -1,0 +1,129 @@
+:root {
+  --Dark-Color: #21243d;
+  --Primary: #ff6464;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", serif;
+}
+
+body {
+  /* max-width: 115.2rem; */
+  color: var(--Dark-Color);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+/* HEADER */
+header {
+  padding-top: 2.7rem;
+}
+
+header nav {
+  display: flex;
+}
+
+.nav__menu {
+  margin-left: auto;
+  display: flex;
+  column-gap: 3.3rem;
+  margin-right: 6rem;
+}
+
+.nav__menu--item {
+  height: 4.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav__menu--item a {
+  font-size: 2rem;
+  font-weight: 500;
+  transition: color 0.2s linear;
+}
+
+.nav__menu--item a:hover {
+  color: #363232ab;
+}
+
+/* MAIN */
+main {
+  padding-left: 14.8rem;
+  padding-right: 14.8rem;
+}
+
+.main__infos {
+  display: flex;
+  padding-top: 14rem;
+  padding-bottom: 7.1rem;
+}
+
+.main__infos--texts {
+  width: 50em;
+  margin-top: 1.8rem;
+}
+
+.main__infos--textsTitle {
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 6rem;
+}
+
+.main__infos--textsDesc {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 4rem;
+}
+
+.main__infos--textsBtn {
+  background-color: var(--Primary);
+  margin-top: 3.8rem;
+  width: 20.7rem;
+  height: 4.7rem;
+  border-radius: 0.2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+.main__infos--img {
+  margin-left: auto;
+  position: relative;
+}
+
+.main__infos--img img {
+  width: 24.3rem;
+  height: 24.3rem;
+}
+
+.main__infos--img::after {
+  content: "";
+  position: absolute;
+  width: 24.3rem;
+  height: 24.3rem;
+  background-color: #edf7fa;
+  border-radius: 50%;
+  left: 0;
+  top: 1.3rem;
+  z-index: -1;
+}
