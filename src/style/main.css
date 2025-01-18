@@ -42,6 +42,10 @@ header nav {
   display: flex;
 }
 
+.nav__menuIcon {
+  display: none;
+}
+
 .nav__menu {
   margin-left: auto;
   display: flex;
@@ -69,11 +73,11 @@ header nav {
 main {
   padding-left: 14.8rem;
   padding-right: 14.8rem;
+  padding-top: 14rem;
 }
 
 .main__infos {
   display: flex;
-  padding-top: 14rem;
   padding-bottom: 7.1rem;
 }
 
@@ -126,4 +130,75 @@ main {
   left: 0;
   top: 1.3rem;
   z-index: -1;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 37.5rem) {
+  header {
+    padding-top: 2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  header .nav__menu {
+    display: none;
+  }
+
+  header nav .nav__menuIcon {
+    display: block;
+    margin-left: auto;
+    margin-right: 1.8rem;
+    cursor: pointer;
+  }
+
+  .nav__menuIcon:hover {
+  }
+
+  main {
+    padding: 0;
+    padding-top: 3.3rem;
+  }
+
+  .main__infos {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5.8rem;
+  }
+
+  .main__infos--img {
+    display: inline-block;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .main__infos--img::after {
+    width: 170.859px;
+    height: 170.859px;
+    top: 9.14px;
+  }
+
+  .main__infos--img img {
+    width: 170.859px;
+    height: 170.859px;
+  }
+
+  .main__infos--texts {
+    width: 31.2rem;
+    text-align: center;
+  }
+
+  .main__infos--textsTitle {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+
+  .main__infos--textsDesc {
+    font-size: 1.6rem;
+    margin-top: 2.1rem;
+  }
+
+  .main__infos--textsBtn {
+    margin-top: 2.7rem;
+  }
 }
